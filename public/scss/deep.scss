@@ -1,0 +1,218 @@
+body {
+    background: #e4e4e4;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    color: #333;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+#bigContainer{
+
+    position: relative;
+    left: 90px;
+}
+#main{
+    width: 50%;
+    min-width: 300px;
+    z-index: 1;
+}
+#rightpane{
+    /*background-color: lightseagreen;*/
+    width: 50%;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    position: fixed;
+    box-sizing: border-box;
+    padding-left: 160px;
+
+    /* Testing */
+    /*z-index: -1;*/
+    /*opacity: 0.5;*/
+}
+
+#searchbox{
+    position: relative;
+    width: 60%;
+    height: 30px;
+    background-color: gray;
+    top: 60px;
+    left: 30px;
+    border: 1px solid dimgray;
+    outline: none;
+    font-size: 16px;
+    font-family: Helvetica;
+    font-weight: lighter;
+    padding: 0px 8px;
+    color:white;
+    opacity: 0.2;
+    transition: 0.2s ease opacity;
+}
+#searchbox:hover, #searchbox:focus{
+    opacity: 1;
+}
+#searchResults{
+    width: 60%;
+    position: relative;
+    top: 90px;
+    left: 30px;
+    height: 100%;
+}
+.image{
+    width: 180px;
+    height: 160px;
+}
+
+#leftbar{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 80px;
+    height: 100%;
+}
+#leftbar > ul{
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0px;
+}
+#leftbar > ul > li{
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    opacity: 0.2;
+    transition: 0.2s ease opacity;
+}
+#leftbar:hover > ul > li{
+    opacity: 1;
+} 
+#leftbar > ul > li:hover{
+    color: red;
+}
+
+.container{
+    width: 100%;
+    min-height: 150px;
+
+    box-shadow: 0px 3px 5px gray;
+    outline: none;
+
+    margin-bottom: 20px;
+
+    /* testing */
+    /*background-color: lightseagreen;*/
+    transition: 0.2s ease all;
+    border-top: 3px solid transparent;
+    position: relative;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-top: 3px solid black;
+}
+.content{
+    outline: none;
+}
+
+#addContainer{
+    width: 50%;
+    min-width: 300px;
+    background-color: lightgray;
+    border: 1px dotted gray;
+    color: gray;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    position: relative;
+    bottom: 0px;
+    left: 90px;
+    padding: 19px;
+}
+#addContainer:hover{
+    background-color: rgb(160,160,160);
+}
+
+#status-circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid lightblue;
+
+    position: fixed;
+    z-index: 2;
+    top: 15px;
+    right: 15px;
+
+    transition-property: background-color, border-color, border-width, right, top;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+}
+#status-circle:hover{
+    background-color: lightgray;
+    border-color: blue;
+    border-width: 6px;
+    top: 12px;
+    right: 12px;
+}
+.saving{
+    border-color: orange !important;
+    background-color: gray !important;
+    -webkit-animation: save-pulse 1s infinite; /* Safari 4+ */
+    -moz-animation:    save-pulse 1s infinite; /* Fx 5+ */
+    -o-animation:      save-pulse 1s infinite; /* Opera 12+ */
+    animation:         save-pulse 1s infinite; /* IE 10+ */
+}
+.saved{
+    border-color: green !important;
+}
+@-webkit-keyframes save-pulse {
+  0%   { background-color: lightgray; }
+  100% { background-color: dimgray; }
+}
+@-moz-keyframes save-pulse {
+  0%   { background-color: lightgray; }
+  100% { background-color: dimgray; }
+}
+@-o-keyframes save-pulse {
+  0%   { background-color: lightgray; }
+  100% { background-color: dimgray; }
+}
+@keyframes save-pulse {
+  0%   { background-color: lightgray; }
+  100% { background-color: dimgray; }
+}
+
+#status-label{
+    border: 1px solid gray;
+    font-size: 14px;
+}
+
+.heading{
+    font-size: 40px;
+}
+
+
+/* Responsive: Phones */
+@media screen and (max-width: 768px) {
+    .container {
+        margin-bottom: 15px;
+    }
+    #main{
+        width: 72%;
+    }
+    #rightpane{
+        display: none;
+    }
+}
+
+
+
+
+
+

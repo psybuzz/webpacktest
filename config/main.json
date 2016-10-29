@@ -1,0 +1,6 @@
+{
+	"PORT": {
+		"FRONTEND"	: 80,
+		"BACKEND"	: 8000
+	}
+}
